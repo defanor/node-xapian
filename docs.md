@@ -297,9 +297,10 @@ TermGenerator
 *    get_description() - return string
         Return a string describing this object.
 ```
-
-
-
-
-
-
+QueryParser
+```
+* QueryParser()
+    Default constructor.
+* parse_query(string)
+    Parse a query string, return a query object.
+```

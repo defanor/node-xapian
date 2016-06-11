@@ -178,6 +178,7 @@ void init (Handle<Object> target) {
   Stem::Init(target);
   Enquire::Init(target);
   Query::Init(target);
+  QueryParser::Init(target);
   Document::Init(target);
   Mime2Text::Init(target);
   target->Set(String::NewSymbol("assemble_document"), FunctionTemplate::New(AssembleDocument)->GetFunction());

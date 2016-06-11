@@ -573,6 +573,21 @@ protected:
   static Handle<Value> GetAvailableLanguages(const Arguments& args);
 };
 
+class QueryParser : public XapWrap<QueryParser> {
+public:
+  static void Init(Handle<Object> target);
+
+  static Persistent<FunctionTemplate> constructor_template;
+
+  Xapian::QueryParser mQueryParser;
+
+protected:
+  QueryParser() : mQueryParser() { }
+  ~QueryParser() { }
+
+  static Handle<Value> New(const Arguments& args);
+  static Handle<Value> ParseQuery(const Arguments& args);
+};
 
 class Query : public XapWrap<Query> {
 public:

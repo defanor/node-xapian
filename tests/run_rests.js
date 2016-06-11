@@ -21,7 +21,7 @@ function doTest(i, sync) {
         console.log();
         aResults.push([aTest.name + (sync ? ' - sync' : ' - async'), result.okN, result.failN, result.fatalN]);
       }
-      doTest(i + !sync, !sync);
+      doTest(i+1, sync);
     });
     return;
   }

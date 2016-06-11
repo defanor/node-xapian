@@ -1,0 +1,30 @@
+{
+    "name": "xapian",
+    "version": "0.0.0",
+    "description": "node.js xapian bindings",
+    "main": "xapian-binding.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "cd tests; node *",
+        "install": "node-gyp rebuild"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https:\/\/github.com\/defanor\/node-xapian.git"
+    },
+    "keywords": [
+        "xapian",
+        "bindings",
+        "search",
+        "api",
+        "wrapper"
+    ],
+    "author": "",
+    "license": "unknown",
+    "gypfile": true,
+    "bugs": {
+        "url": "https:\/\/github.com\/defanor\/node-xapian\/issues"
+    }
+}
